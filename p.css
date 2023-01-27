@@ -1,0 +1,327 @@
+*{
+    text-transform: capitalize;
+}
+/* header */
+.header{
+    /* position: unset; */
+    /* margin-bottom: 30px; */
+    /* padding-bottom: 30px; */
+    /* background-attachment: fixed; */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.header .menu{
+    color: #fff;
+    background: #556f91;
+}
+.header .menu .col-md-6{}
+.header .menu .col-md-6 ul{
+    margin-bottom: 0;
+    text-align: end;
+}
+.header .menu .col-md-6 ul li{
+    position: relative;
+    border-left: 1px solid;
+    padding: 10px 20px;
+    display: inline-block;
+    /* border: none; */
+    margin-left: -4px;
+}
+.header .menu .col-md-6 ul li:last-child{
+    border-right:1px solid;
+}
+.header .menu .col-md-6 ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header .menu .col-md-6 ul li ul{
+    visibility: hidden;
+    top: 100%;
+    position: absolute;
+    /* left: 8px; */
+    transform-origin: center top;
+    right: 0;
+    opacity: 0;
+    border-top: 1px solid;
+    padding-left: 0;
+    text-align: center;
+    transform: scaleY(1);
+    border-left: 1px solid;
+    /* text-align: center; */
+    transition: .5s;
+    /* padding: 10px 20px; */
+    display: inline-block;
+    background: #556f91;
+    text-align: center;
+    margin-left: -4px;
+    border: none;
+    width: 170px;
+}
+.header .menu .col-md-6 ul li ul li{
+     text-align: center;
+     border-left: 0;
+     display: block;
+     border-right: 0 !important;
+     background: #598dbb;
+     border-top: 1px solid;
+     border-top: 1px 0 solid #fff;
+     border: 20px 0 solid #fff;
+     background: #556f91;
+     /* border: none; */
+}
+.header .menu .col-md-6 ul li ul li a{}
+.header .menu .col-md-6 ul li:hover{
+    /* color:black; */
+    background: #598dbb;
+    /* background:#60d9d9; */
+}
+.header .menu .col-md-6 ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transform: scaleY(1);
+}
+.header .menu .col-md-6 ul li ul li:hover{
+    background: #598dbb;
+}
+
+/* banner */
+.banner{
+    padding: 50px;
+}
+.banner .row {
+    border: 5px solid blue;
+    /* margin-top: 40px; */
+    border-radius: 130px 0;
+}
+.banner .img .col-md-6 {
+    padding-left: 0;
+}
+.banner .img .col-md-6  img{}
+.banner .col-md-6 .intro{
+    padding: 20% 0% 0% 25%;
+}
+.banner .col-md-6 .intro h1{
+    padding: 15px 0;
+    font-style: oblique;
+    font-size: 50px;
+}
+.banner .col-md-6 .intro p{
+    font-size: 30px;
+}
+/* about */
+.about{
+    text-align: center;
+    padding: 60px;
+    /* margin: 60px 0 0 0; */
+}
+.about h1{
+    padding: 10px 50px;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+.about p{
+    max-width: 850px;
+    font-size: 30px;
+    margin: auto;
+}
+/* skill */
+.skill{
+    text-align: center;
+    margin-bottom: 40px;
+    cursor:unset;
+    padding: 30px;
+}
+.skill h2{
+    margin: 30px;
+    display: inline-block;
+    padding: 20px 50px;
+    border-bottom: 2px solid #ddd;
+}
+.skill h3{
+    margin: auto;
+    position: absolute;
+    /* padding: 52px; */
+    top: 46%;
+    left: 44%;
+    text-align: center;
+}
+.skill .col-md-4{
+    text-align: left;
+    padding: 10p;
+    margin: auto;
+}
+.skill .col-md-4 .card{
+    border: none;
+    padding: 5px;
+}
+.skill .col-md-4 .card .card{}
+.skill .col-md-4 .card .card .line{
+    height: 8px;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: cyan;
+    /* color: blue; */
+    content: red;
+}
+.skill .col-md-4 .total-skill{
+    text-align: center;
+    height: 50%;
+    position: relative;
+    padding: 49%;
+    width: 50%;
+    background: #5bd0f3;
+    border: 10px solid cornflowerblue;
+    /* font-size: 50px; */
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.skill .col-md-4 .card .card .line::before{
+    content: " ";
+    height: 6px;
+    width: 0%;
+    position: absolute;
+    top: 16px;
+    left: 10p;
+    background: #4c3bff;
+    transition: 1s;
+    z-index:1;
+    
+}
+.skill:hover .col-md-4 .card .card .line::before{
+    width: 70%;
+}
+/* services */
+.services{
+    padding: 50px;
+    margin: 30px;
+}
+.services .container{}
+.services .container h2{
+    padding: 10px 50px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+}
+.services .container .col-md-4{}
+.services .container .col-md-4 .card{}
+.services .container .col-md-4 .card .service{
+    text-align: center;
+    padding: 10px;
+}
+.services .container .col-md-4 .card .service h2{
+    margin-bottom: 25px;
+}
+.services .container .col-md-4 .card .service p{}
+/* client */
+.client{
+    padding: 50px;
+    margin: 20px;
+}
+.client .container{}
+.client .container h2{
+    padding: 10px 50px;
+    border-bottom: 2px solid;
+    display: inline-block;
+}
+.client .container .col-md-4{
+    /* height: 200px; */
+}
+.client .container .col-md-4 h1{
+    position: absolute;
+    top: 62%;
+    border: 1px solid #a77b7b;
+    color: #fff;
+    padding: 8px;
+    border-radius: 30px;
+    left: 3%;
+}
+.client .container .col-md-4 h4{
+    position: absolute;
+    top: 80%;
+    color: #fff;
+    border: 1px solid #a37979;
+    left: 4%;
+    padding: 5px 10px;
+    border-radius: 34px;
+}
+.client .container .col-md-4 img{
+    max-width: 100%;
+}
+.client .container .col-md-4 .review{}
+.client .container .col-md-4 .review i{
+    border: 1px solid blck;
+}
+/* project */
+.project{
+    padding: 50px;
+}
+.project h2{
+    padding: 10px 50px;
+    display: inline-block;
+    border-bottom: 2px solid;
+    margin: 20px;
+}
+.project .col-md-3{
+    text-align: center;
+}
+.project .col-md-3 h4{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.project .col-md-3 p{
+    font-size: 20px;
+}
+/* product */
+.product{
+    padding: 50px;
+}
+.product h2{
+    padding: 10px 50px;
+    border-bottom: 2px solid;
+    display: inline-block;
+    margin: 30px;
+}
+.product .col-md-3{}
+.product .col-md-3 .card{
+    margin: 20px;
+}
+.product .col-md-3 .card h5{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+.product .col-md-3 .card img{}
+/* contact */
+.contact{}
+.contact{
+    padding: 50px;
+}
+.contact .col-md-6{}
+.contact .col-md-6 .info{
+    font-size: 26px;
+    text-transform: none;
+}
+.contact .col-md-6 h2{
+    border-bottom: 2px solid;
+    margin-bottom: 50px;
+}
+.contact .col-md-6 .btn{
+    padding: 50px 0;
+}
+.contact .col-md-6 .btn .btn1{}
+.contact .col-md-6 .btn .btn1 button{}
+/* .fotter */
+.fotter{
+    background: aquamarine;
+    line-height: 40px;
+    border-top: 2px solid;
+}
+.fotter .col-md-6 .tag{}
+.fotter .col-md-6 .tag p{
+    margin: 0;
+}
+.fotter .col-md-6 .icon{}
+.fotter .col-md-6 .icon i{}
